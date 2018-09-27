@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+/* 
+	Taqwa Khogeer
+	Project 5
+*/
+
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* 
+	BACKGROUND
+*/
+
+html { 
+  background: url(../images/bk1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* 
+	NAV BAR
+*/
+nav {
+position: fixed;
+top:0;
+width: 100%;
+}
+
+ul.topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+}
+
+ul.topnav li {
+	float: left;
+	height: 48px;
+}
+
+ul.topnav li a {
+	color: #f2f2f2;
+	font-size: 17px;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 16px;
+	display: inline-block;
+	transition: 0.3s;
+}
+
+ul.topnav li a.active {
+	background-color: #E56717;
+}
+
+ul.topnav li a:hover {
+	background-color:  rgba(254, 245, 231, 0.8);
+}
+
+ul.topnav li.icon {
+	display: none;
+}
+
+@media screen and (max-width:680px) {
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one "Home". 
+   Show the list item that contains the link to open and close the topnav (li.icon) */
+	nav ul.topnav li:not(:first-child) {
+		display: none;  /* hide */
+	}
+	nav ul.topnav li.icon {
+		float: right;
+		display: inline-block;
+	}
+	nav ul.topnav li.icon a {
+		height: 48px;
+	}
+/* The "responsive" class is added to topnav with JS when the user clicks on the icon.
+   This turns on the menu and changes the other menu items into "dropdown" items. */
+	nav ul.topnav.responsive { position: relative; }
+	nav ul.topnav.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	nav ul.topnav.responsive li {
+		float: none;
+		display: inline;   /* show */
+	}
+	nav ul.topnav.responsive li a {
+		display: block;   /* stack, where as before these were inline */
+		text-align: left;
+	}
+	
+}
+
+/* 
+	TYPOGRAPHY
+*/
+
+h1,h2,h3,h4,h5,p,li, address, th, td {
+	font-family: 'Raleway', sans-serif;
+}
+
+/* 
+	HEADER
+*/
+
+header {
+	max-width: 960px;
+	margin: 6.0em auto 0;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 100px;
+	margin: 0;
+	color: #FFFFF0;
+	font-weight: 700;
+}
+
+/* 
+	MAIN 
+*/
+
+main {
+	background-color: rgba(254, 245, 231, 0.8);
+	max-width: 960px;
+	margin: 2.0em auto 4.0em;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 20px;
+}
+
+.type {
+	background-color: #E56717;
+	flex-grow: 2;
+	flex-basis: 100%;
+  	border-width: 1px 0 0 0; 
+  	border-radius: 50px;
+  	margin: 10px 5px 0px;
+  	height: 55px;
+}
+
+.type h1 {
+	text-align: center;
+	margin: 10px;
+}
+
+.type p {
+	text-align: center;
+	font-style: italic;
+}
+
+article, aside {
+	flex-grow: 1;
+	flex-basis: 50%;
+	padding: 3%;
+	min-width: 250px;
+}
+
+.price {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin: 0;
+}
+
+.price h2, .price h3 {
+	font-weight: 400;
+	margin-bottom: 0;
+	margin-top: 25px;
+}
+
+article p, aside p {
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+p {
+	color: #383838;
+}
+
+.extra {
+	font-style: italic;
+	font-size: 90%
+}
+
+#contact section {
+	margin-bottom: 40px;
+}
+
+#contact article {
+	min-width: 250px;
+	flex-basis: 40%;
+}
+
+#contact aside {
+	flex-basis: 60%;
+}
+
+@media screen and (max-width:970px) {
+	main {
+		margin: 0em 1.5em 1.0em;
+	}
+	
+	article, aside {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+#contact .hours th {
+	text-align: left;
+	font-size: 18px;
+	vertical-align: top;
+}
+
+#contact .hours td {
+	text-align: right;
+	padding-bottom: 10px;
+}
+
+#contact table {
+	width: 100%;
+}
+
+#contact p, #contact address, #contact th, #contact td {
+	color: #000;
+}
+
+#contact h2 {
+	border-bottom: 1px solid #E56717;
+	font-weight: normal;
+}
+
+#contact address {
+	font-style: normal;
+}
+
+#contact h2 {
+	font-size: 30px;
+}

@@ -1,0 +1,205 @@
+h1, nav a{
+    font-family: "Georgia";
+}
+
+body{
+    font-family: "arial";
+    background-image: url("../images/img1.jpg");
+}
+
+header{
+    padding-top: 80px;
+    margin-bottom: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 15px;
+    background-color: white;
+    margin: 50px;
+}
+
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+
+.active{
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+main{
+    padding: 40px;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.7);
+    margin-bottom: 40px;
+}
+
+.intro{
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 2;
+    font-size: 16px;
+}
+
+table{
+    max-width: 850px;
+    margin: 0 auto;
+    border-spacing: 0 50px;
+    border-collapse: separate;
+}
+
+th{
+    font-style:italic;
+    border-right: 1px solid #999;
+    text-align: right;
+    padding: 0 8px 0 0;
+    vertical-align: top;
+}
+
+td{
+    padding: 10px;
+    line-height: 1.8;
+}
+
+tr{
+    margin-top: 100px;
+}
+
+table h4 {
+    margin-bottom: 0;
+}
+
+table p{
+    margin-top: 0;
+}
+
+.date{
+    font-style: italic;
+    margin-bottom: 0;
+    }
+
+rect{
+    fill:pink;
+    stroke:lightGrey;
+    stroke-width:3;
+    opacity:0.7;
+}
+
+img{
+    width:50%;
+}
+
+.activity h4{
+   margin-top: 70px; 
+}
+
+.portfolio div{
+    margin:8% 0;
+}
+
+h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 14px;
+}
+
+.navbar-toggler{
+    margin: 0 auto;
+}
+
+h4{
+    font-size: 18px;
+}
+
+
+/*Extra Small devices (phones, 575px and down)*/
+@media (max-width: 575px){
+    .container{
+        max-width: 90%;
+    }
+    td{
+        font-size: 90%;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    nav{
+        margin: 50px 70px; 
+    }
+    .navbar-nav {
+        float:none;
+        margin:0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar-nav > li {
+        display: inline-block;
+        float:none;
+    }
+    th{
+        width: 150px;
+        padding: 0 25px 0 0;
+    }
+    .date{
+    font-style: italic;
+    float:right;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .portfolio div{
+        margin:5% 0;
+    }
+    nav{
+       margin: 50px 140px; 
+    }
+    h2{
+    font-size: 22px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 20px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    nav{
+        margin: 50px 200px; 
+    }
+    
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    nav{
+        margin: 50px 300px;
+    }
+}

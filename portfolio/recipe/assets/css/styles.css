@@ -1,0 +1,92 @@
+/* 
+	Documentation Comment
+*/
+
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#container {
+	width: 800px;
+	margin: 50px auto;
+	border: 25px double SIENNA;
+	padding: 50px;
+	background-color: IVORY;
+}
+
+body{
+	background-color: gb(255, 160, 122, 0.7);
+}
+
+h1,h2,h3,h4,h5,h6, th, table td {
+	font-family: Palatino, "Palatino Linotype", "Hoefler Text", Times, "Times New Roman", serif
+}
+
+p,li,td, figcaption {
+	font-family: Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif
+}
+
+h1{
+	font-size: 40px;
+}
+
+h2 {
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+h3 {
+	border-top: 4px dotted LIGHTSALMON;
+	margin-top: 3em;
+	padding-top: 2em;
+}
+
+img {
+	width: 100%;
+}
+
+img.img2 {
+	width: 60%;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+figure.fig1 {
+	width: 50%;
+	float: right;
+	padding: 0 0 0 1em;
+	margin-top: 5em;
+}
+
+ul li {
+	line-height: 1.6em;
+}
+
+ol li {
+	line-height: 1.4em;
+	padding-bottom: 0.6em;
+}
+
+th {
+	text-align: right;
+	border-right: 1px solid black
+}
+
+td, th {
+	padding: 0.5em 1em 0em 1em;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: slateblue;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+	color:  SIENNA;
+}

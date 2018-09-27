@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400|Philosopher:400,700');
+
+/* 
+Extra small devices (portrait phones, less than 544px)
+No media query since this is the default in Bootstrap
+ */
+  
+/* GENERAL */
+body {
+	font-family: 'Muli', sans-serif;
+}
+
+nav a, h1, h2, h3 {
+	font-family: 'Philosopher', sans-serif;
+}
+
+header { 
+  background: url(../images/barn-fall.jpg) no-repeat center top; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 200px;
+}
+
+nav{
+	background-color: rgb(111,26,7);
+	margin: 0;
+}
+
+.navbar {
+	padding: 0;
+	border-radius: 0;
+	margin: 0;
+}
+
+.navbar-nav .nav-item+.nav-item {
+    margin-left: 0;
+}
+
+nav a:link, nav a:visited{
+	color: #f7f3e3;
+	transition: 0.3s;
+	font-size: 18px;
+	padding: 0.5em;
+}
+
+nav a:hover, .dropdown-menu .active:hover  {
+	background-color: rgb(157,52,33);
+	color: #f7f3e3;
+}
+
+nav .active, .dropdown-menu .active, .dropdown-menu .active:hover {
+	text-decoration: underline;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.dropdown-menu .active {
+	background-color: rgb(111,26,7);
+}
+
+.dropdown-menu {
+  	background-color: rgb(111,26,7);
+  	padding: 0;
+  	min-width: 8.5rem;
+  	margin: -0.1em;
+  	border-top: none;
+}
+
+.dropdown-menu a:hover {
+	background-color: rgb(157,52,33);
+	color: #f7f3e3;
+}
+
+.logo {
+	width: 200px;
+	margin: 15px;
+}
+
+/* MAIN */
+main {
+	padding: 40px 10px;
+}
+
+main h1, aside h1 {
+	font-size: 26px;
+	text-align: center;
+	margin-bottom: 1em;
+	font-weight:700;
+}
+
+main p, aside p{
+	text-align: center;
+}
+
+main h2, aside h2 {
+	text-align: center;
+	font-size: 22px;
+	padding-top: 15px;
+	color: #af9164;
+}
+
+main h3, aside h3 {
+	text-align: center;
+	font-size: 22px;
+	margin-top: 10px;
+}
+
+main h5, aside h5{
+	font-size: 16px;
+	text-align: center;
+}
+
+.home, .appletips, .top21, .groups, .currentapples {
+	background-color: #f7f3e3;
+}
+
+.faq, .groups, .weddings, .appletips  {
+	background-color: #f7f3e3;
+	background-image: url("../images/wood-pattern.png");
+}
+
+
+.sheltercontainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border: 10px double #345926;
+	border-radius: 13px;
+	padding: 20px;
+	margin: 30px auto;
+	background-color: #f7f3e3;
+}
+
+.shelter1, .shelter2 {
+	flex: 0 1 auto;
+}
+
+.sheltercontainer p, .sheltercontainer h2 {
+	margin: 10px auto;
+}
+
+.carousel-item img{
+	width: 100%;
+}
+.carousel-inner>.carousel-item>a>img, .carousel-inner>.carousel-item>img {
+	height: 270px;
+}
+
+.carousel-caption {
+ 	position: relative;
+    left: auto;
+    right: auto;
+}
+
+.lower{
+	top: 1%;
+}
+
+#carousel {
+	background-color: #2b2118;
+	margin-bottom: 20px;
+}
+
+.carousel-item {
+	height: 390px;
+}
+
+.carousel-indicators { bottom: -10px; }
+
+.appletips {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.appletips main, .appletips aside {
+	flex: 0 1 auto;
+	flex-basis: 100%;
+}
+
+.appletips .card-header {
+	background-color: rgb(111,26,7);
+}
+
+.appletips .card-header h5 {
+	color: #f7f3e3;
+}
+
+.appletips .card a:link, a:hover, a:visited {
+	text-decoration: none;
+}
+
+.appletips .hvr-grow {display:block;}
+
+.appletips .unique {
+	font-weight: 300;
+}
+
+.currentapples .card-block, .top21 .card-block {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.currentapples img, .top21 img {
+	width:100%;
+}
+
+.currentapples .appletitle {
+	height: 58px;
+	line-height: 58px;
+	padding: 0;
+}
+
+.top21 .appletitle{
+	height: 58px;
+	padding: 0 0.5px;
+}
+
+.currentapples .card-title {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+.currentapples .card, .top21 .card{
+	margin: 20px auto;
+}
+
+.top21 h6 {
+	font-size: 12px;
+}
+
+.crossed {
+	font-size: 12px;
+}
+
+/* FOOTER */
+footer {
+	background-color: #2b2118;
+	color: #f7f3e3;
+	padding: 0 30px 20px;;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#col1, #col2, #col3, #col4 {
+	flex: 0 1 auto;
+	flex-basis: 100%;
+}
+
+#col4 {margin-top:10px;}
+
+footer h2 {
+	margin-bottom: 10px;
+	margin-top: 40px;
+	font-size: 25px;
+}
+
+footer p, address, th, td {
+	font-size: 15px;
+}
+
+footer h2, p, address{
+	text-align: center;
+}
+
+footer th {
+	text-transform: uppercase;
+}
+
+footer td {
+	padding-left: 20px;
+}
+
+footer table {
+	margin: 0 auto;
+}
+
+footer p {
+	margin: 0;
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+	header {height:250px;}
+	nav a:link, nav a:visited{font-size: 20px; padding: 0.5em 1.0em;}
+	main p, aside p {font-size: 17px;}
+	main h2, main h3, aside h2, aside h3 {font-size: 24px;}
+	main, aside {padding: 40px 0px;}
+	.logo {width: 250px;margin: 20px;}
+	.carousel-item {height: 380px;}
+	#col4 {flex-basis: 50%; margin: 10px auto;}
+	.brk {display: block;}
+	.currentapples .appletitle{height:64px;line-height:64px;}
+	.top21 .appletitle {height:62px;}
+	.appletitle h3{font-size:22px;}
+	.res {min-width: 11rem;}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	header {height:320px;}
+	#col1, #col2, #col3 {flex-basis: 33%;}
+	#col4 {margin-top:30px;}
+	footer h2 {font-size: 28px;}
+	footer {justify-content:center;}
+	main h1, aside h1 {font-size:30px;}
+	main p, aside p {font-size:20px;}
+	main h2, main h3, aside h2, aside h3 {font-size: 28px;}
+	.shelter1, .shelter2 {flex-basis: 49%}
+	.logo {width: 350px;}
+	.carousel-inner>.carousel-item>a>img, .carousel-inner>.carousel-item>img {height: 310px;}
+	.carousel-item {height: 420px;}
+	.carousel-item p{font-size:18px;}
+	#carousel {	width: 75%; margin: 0 auto 25px;}
+	.appletips main {flex-basis: 70%; order:2;}
+	.appletips aside {flex-basis: 30%; order:1;}
+	aside {padding: 40px 10px;}
+	.appletips p {font-size: 18px;}
+	.appletitle {height: 60px;}
+	.currentapples .card-text, .top21 .card-text {font-size: 16px; margin-top: 15px;}
+	.crossed {font-size: 14px;}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.container {max-width: 960px;}
+ 	header {height:370px;}
+	footer h2 {font-size: 30px;}
+	footer p, address, th, td {font-size: 17px;}
+	nav a:link, nav a:visited{font-size: 22px;}
+	main h1, aside h1 {font-size:36px;}
+	.logo {width: 370px;}
+	.carousel-inner>.carousel-item>a>img, .carousel-inner>.carousel-item>img {height: 400px;}
+	.carousel-item {height: 515px;}
+	.carousel-item p{font-size:20px;}
+	.appletips h5 {font-size:18px;}
+	.appletitle {height: 62px;}
+	.currentapples .card-text, .top21 .card-text {font-size: 18px;}
+	.top21 h6 {font-size: 14px;}
+	.currentapples .appletitle {height:58px;line-height:58px;}
+	.top21 .appletitle {height:66px;}
+	.top21 .card-title{font-size:26px;}
+	.currentapples h3 {font-size: 24px;}
+	.res {min-width: 12rem;}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	header {height:420px;}
+	.appletips p {font-size: 20px;}
+	.card-block{font-size:17px;}
+}
